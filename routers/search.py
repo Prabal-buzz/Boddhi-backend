@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from sqlalchemy import or_
 from typing import List
 
-from ..database import get_db
-from ..models.product import Product, Category
-from ..schemas.schemas import SearchResponse
+from database import get_db
+from models.product import Product, Category
+from schemas.schemas import SearchResponse
 
 router = APIRouter()
 

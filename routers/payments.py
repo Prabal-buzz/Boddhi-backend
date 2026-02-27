@@ -23,17 +23,17 @@ from fastapi import APIRouter, Depends, HTTPException, status, Request
 from sqlalchemy.orm import Session
 from typing import Optional
 
-from ..database import get_db
-from ..models.order import Order, OrderStatus
-from ..models.payment import Payment, PaymentMethod, PaymentStatus
-from ..models.user import User
-from ..schemas.schemas import (
+from database import get_db
+from models.order import Order, OrderStatus
+from models.payment import Payment, PaymentMethod, PaymentStatus
+from models.user import User
+from schemas.schemas import (
     PaymentInitiate, PaymentResponse, ESewaVerifyRequest,
     KhaltiVerifyRequest, StripePaymentIntent, MessageResponse,
     ESewaInitResponse, KhaltiInitResponse
 )
-from ..security import get_current_user
-from ..config import settings
+from security import get_current_user
+from config import settings
 
 router = APIRouter()
 

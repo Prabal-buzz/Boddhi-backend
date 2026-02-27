@@ -6,12 +6,12 @@ import os
 import uuid
 import shutil
 
-from ..database import get_db
-from ..models.user import User, UserRole
-from ..models.order import Order, OrderStatus
-from ..models.product import Product
-from ..schemas.schemas import UserProfile, OrderResponse, MessageResponse, AdminDashboardResponse
-from ..security import get_current_user
+from database import get_db
+from models.user import User, UserRole
+from models.order import Order, OrderStatus
+from models.product import Product
+from schemas.schemas import UserProfile, OrderResponse, MessageResponse, AdminDashboardResponse
+from security import get_current_user
 
 router = APIRouter()
 

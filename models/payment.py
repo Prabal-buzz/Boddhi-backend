@@ -3,7 +3,7 @@ from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 import enum
 
-from ..database import Base
+from database import Base
 
 class PaymentMethod(enum.Enum):
     ESEWA = "esewa"

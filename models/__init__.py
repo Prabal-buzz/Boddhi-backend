@@ -1,6 +1,6 @@
-from .user import User, UserRole
-from .product import Product, Category
-from .cart import CartItem
-from .order import Order, OrderItem, OrderStatus
-from .payment import Payment, PaymentMethod, PaymentStatus
-from .contact import Contact
+from models.user import User, UserRole
+from models.product import Product, Category
+from models.cart import CartItem
+from models.order import Order, OrderItem, OrderStatus
+from models.payment import Payment, PaymentMethod, PaymentStatus
+from models.contact import Contact

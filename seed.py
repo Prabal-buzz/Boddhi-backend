@@ -9,10 +9,10 @@ Populates the database with initial data:
 Run with: python seed.py
 """
 
-from .database import SessionLocal, create_tables
-from .models.user import User, UserRole
-from .models.product import Product, Category
-from .security import hash_password
+from database import SessionLocal, create_tables
+from models.user import User, UserRole
+from models.product import Product, Category
+from security import hash_password
 
 
 def seed_database():

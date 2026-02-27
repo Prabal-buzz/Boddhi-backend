@@ -17,8 +17,8 @@ from contextlib import asynccontextmanager
 import uvicorn
 import os
 
-from .database import create_tables
-from .routers import auth, products, cart, orders, payments, contact, admin, search
+from database import create_tables
+from routers import auth, products, cart, orders, payments, contact, admin, search
 
 
 @asynccontextmanager

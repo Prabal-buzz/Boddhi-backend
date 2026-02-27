@@ -10,22 +10,22 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from datetime import timedelta
 
-from ..database import get_db
-from ..models.user import User, UserRole
-from ..schemas.schemas import (
+from database import get_db
+from models.user import User, UserRole
+from schemas.schemas import (
     UserRegister, UserLogin, AdminLogin, TokenResponse,
     RefreshTokenRequest, UserProfile, UserUpdate, ChangePassword, MessageResponse,
     UserDashboardResponse
 )
-from ..models.order import Order, OrderStatus
-from ..models.cart import CartItem
+from models.order import Order, OrderStatus
+from models.cart import CartItem
 from sqlalchemy import func
-from ..security import (
+from security import (
     hash_password, verify_password,
     create_access_token, create_refresh_token, decode_token,
     get_current_user
 )
-from ..config import settings
+from config import settings
 
 router = APIRouter()
 

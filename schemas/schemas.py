@@ -1,9 +1,9 @@
 from pydantic import BaseModel, EmailStr, Field, ConfigDict
 from typing import List, Optional, Any
 from datetime import datetime
-from ..models.user import UserRole
-from ..models.order import OrderStatus
-from ..models.payment import PaymentMethod, PaymentStatus
+from models.user import UserRole
+from models.order import OrderStatus
+from models.payment import PaymentMethod, PaymentStatus
 
 # --- Generic Responses ---
 class MessageResponse(BaseModel):

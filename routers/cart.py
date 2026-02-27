@@ -2,12 +2,12 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
 
-from ..database import get_db
-from ..models.cart import CartItem
-from ..models.product import Product
-from ..models.user import User
-from ..schemas.schemas import CartItemResponse, CartResponse, CartItemCreate, CartItemUpdate
-from ..security import get_current_user
+from database import get_db
+from models.cart import CartItem
+from models.product import Product
+from models.user import User
+from schemas.schemas import CartItemResponse, CartResponse, CartItemCreate, CartItemUpdate
+from security import get_current_user
 
 router = APIRouter()
 
